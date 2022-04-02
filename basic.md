@@ -47,7 +47,10 @@ int main()//主函数-程序的入口-main函数有且只有一个
 	// 可以用printf("%d\n",sizeof(int));来调查字节个数
 	//scanf有自己输入的作用
 }
-/*
+
+
+
+
 #include <stdio.h>//#include<stdio.h>是在程序编译之前要处理的内容，称为编译预处理命令
 #include <string.h>//包含字符串处理函数的头文件
 int main() {
@@ -85,4 +88,29 @@ int main() {
 \ddd，ddd表示1—3个8进制的数字
 \xdd，dd表示2个十六进制数字
 	*/
-*/
+
+
+
+
+
+#include <stdio.h>
+int main() {
+	int a = 0;
+	int b = ~a;
+	//~是按位符号
+	//此处答案是-1，理由是需要原码，反码，补码有关。
+	//输出的是原码
+	//补码减一得到反码，在按位取就是原码
+	//此处b是带有符号的整型，第一个0或1代表符号
+	printf("%d\n", b);
+	int c = 10;
+	int d = c++;//后置++，先使用，后++打印结果c是11，d是10
+	//int d = ++c;//前置++，先++，后使用，打印结果从，d均是11
+	printf("c = %d d =%d\n", c, d);
+	int e = 10;
+	int f = 12;
+	int max = e > f ? e : f;
+	//三目操作符
+	printf("max = %d\n", max);
+	return 0;
+}
