@@ -77,21 +77,7 @@ int main() {
 	sum = 12;
 	printf("sum=%d\n", sum);
 	printf("as\\tabc");
-	return 0;
-}
-	/* 
-\n是换行
-\t是水平制表符
-\是转义符号
-如果要打印\t不应该printf（"\t"）这样只会打印出一堆空格
-应该这样输出printf（"\\t"）这样就会打印出\t
-\ddd，ddd表示1—3个8进制的数字
-\xdd，dd表示2个十六进制数字
-	*/
-
-
-#include <stdio.h>
-int main() {
+	
 	int a = 0;
 	int b = ~a;
 	//~是按位符号
@@ -111,3 +97,21 @@ int main() {
 	printf("max = %d\n", max);
 	return 0;
 }
+	
+/* 
+	
+\n是换行
+
+\t是水平制表符
+
+\是转义符号
+
+如果要打印\t不应该printf（"\t"）这样只会打印出一堆空格
+
+应该这样输出printf（"\\t"）这样就会打印出\t
+
+\ddd，ddd表示1—3个8进制的数字
+
+\xdd，dd表示2个十六进制数字
+
+*/
