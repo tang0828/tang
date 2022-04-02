@@ -27,11 +27,7 @@ int main() {
         printf("不是3\n"); 
         
     }
-    int x;
-    
-    int y;
-    
-    int he;
+    int x,y,he;
     
     scanf("%d %d", &x, &y);
     
