@@ -51,7 +51,7 @@ int main()//主函数-程序的入口-main函数有且只有一个
 
 
 
-#include <stdio.h>//#include<stdio.h>是在程序编译之前要处理的内容，称为编译预处理命令
+#include <stdio.h> //#include<stdio.h>是在程序编译之前要处理的内容，称为编译预处理命令
 #include <string.h>//包含字符串处理函数的头文件
 int main() {
 
@@ -88,9 +88,6 @@ int main() {
 \ddd，ddd表示1—3个8进制的数字
 \xdd，dd表示2个十六进制数字
 	*/
-
-
-
 
 
 #include <stdio.h>
